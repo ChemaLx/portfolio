@@ -56,5 +56,5 @@
           with:
             app-name: 'portfolio-JMLara'
             slot-name: 'production'
-            publish-profile: ${{ secrets.AzureAppService_PublishProfile_46a081bb6d584558a0f20f203f822802 }}
+            publish-profile: ${{ secrets.AzureAppService_PublishProfile_4f93a18eb343448fbe10d91b947732c0 }}
             package: .
