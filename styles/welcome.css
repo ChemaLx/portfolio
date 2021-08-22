@@ -1,0 +1,98 @@
+.circle{
+    position: relative;
+
+    width: 80vw;
+    height: 80vw;
+    filter: url(#wavy) blur(1px);
+}
+.mark2{
+    transition: all 1s; 
+}
+
+.circle:before{
+    content: '';
+    position: absolute;
+
+    top: 50px;
+    left: 100px;
+    right: 100px;
+    bottom: 150px;
+    border: 20px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #0f0,
+                inset 0 0 50px #0f0;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0002);
+    animation: animate 5s linear infinite;
+}
+.circle:after{
+    content: '';
+    position: absolute;
+
+    top: 50px;
+    left: 100px;
+    right: 100px;
+    bottom: 150px;
+    border: 20px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 70px #fff,
+                inset 0 0 70px #fff;
+}
+@keyframes animate{
+    0%{
+        box-shadow: 0 0 50px #0f0,
+            inset 0 0 50px #0f0;
+        filter: hue-rotate(0deg);
+    }
+    20%{
+        box-shadow: 0 0 60px #0f0,
+            inset 0 0 60px #0f0;
+        
+    }
+    40%{
+        box-shadow: 0 0 40px #0f0,
+            inset 0 0 40px #0f0;
+        
+    }
+    60%{
+        box-shadow: 0 0 80px #0f0,
+            inset 0 0 80px #0f0;
+        
+    }
+    80%{
+        box-shadow: 0 0 100px #0f0,
+            inset 0 0 100px #0f0;
+        
+    }
+    100%{
+        box-shadow: 0 0 50px #0f0,
+            inset 0 0 50px #0f0;
+        filter: hue-rotate(360deg);
+    }
+}
+svg{
+    width: 0;
+    height: 0;
+}
+@media only screen and (min-width: 700px) {
+    .circle{
+        
+        width: 80vh;
+        height: 80vh;
+        
+    }
+}
+.h{
+    /* display: none; */
+    transition: all 1s; 
+}
+.h:hover{
+    /* border: 5px solid rgb(255, 255, 255); */
+    text-shadow: 0 0 30px rgba(55, 0, 255, 1),
+                0 0 20px rgba(55, 0, 255, 1),
+                0 0 20px rgba(55, 0, 255, 1),
+                0 0 10px rgba(55, 0, 255, 1),
+               /*  0 0 10px rgba(55, 0, 255, 1),
+                0 0 30px rgba(55, 0, 255, 1), */
+                0 0 30px rgba(55, 0, 255, 1);
+    /* padding: 5vh; */
+}

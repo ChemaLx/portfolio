@@ -1,0 +1,53 @@
+/* ------------------------------- config --------------------*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    width: 100vw;
+    height: auto;
+    font-family: monospace;
+    overflow-x: hidden;
+    
+}
+.flex-init{
+    display: flex;
+}
+.flex-align-y{
+    align-items: center;
+}
+.flex-align-x{
+    justify-content: center;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.size{
+    font-size: 1rem;
+}
+.title{
+    font-size: 4vw;
+}
+.color-font{
+    color: white;
+}
+.separation{
+    padding: 4vh;
+}
+.color-font-black{
+    color: black;
+}
+.title-me{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 3vh;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
