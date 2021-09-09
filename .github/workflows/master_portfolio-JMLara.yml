@@ -19,7 +19,7 @@
         - name: Setup PHP
           uses: shivammathur/setup-php@v2
           with:
-            php-version: '7.3'
+            php-version: '7.4'
             
         - name: Check if composer.json exists
           id: check_files
@@ -56,5 +56,5 @@
           with:
             app-name: 'portfolio-JMLara'
             slot-name: 'production'
-            publish-profile: ${{ secrets.AzureAppService_PublishProfile_5cded3b7d5944bac868dcc247cf408e8 }}
+            publish-profile: ${{ secrets.AzureAppService_PublishProfile_68983c4b64c1456f8cc8f347ce88ffb1 }}
             package: .
