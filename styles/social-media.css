@@ -20,6 +20,7 @@
     font-weight: 700;
     color: #000;
     transition: 0.5s;
+    display: none;
     opacity: 0;
 }
 /* .sci li:hover::before{
@@ -40,7 +41,7 @@
     margin: 2vw;
     font-size: 4rem;
     transform-style: preserve-3d;
-    perspective: 500px;
+    /* perspective: 500px; */
     box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
     transition: background 0.25s;
     text-decoration: none;
@@ -87,6 +88,7 @@
         height: 100vh;
     }
     .sci li:hover::before{
+        display: block;
         opacity: 0.5;
         transform: translate(-50%, calc(-50% + 30vh));
     }
